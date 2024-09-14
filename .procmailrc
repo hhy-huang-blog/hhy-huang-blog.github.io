@@ -1,0 +1,15 @@
+VERBOSE=off
+MAILDIR=$HOME/Mail
+
+# save spam to ~/Mail/spam
+:0: 
+* ^X-SPAM-Warning: CSE
+spam
+
+# default to /var/spool/mail
+
+# forward email, exclude spam message, no locking needed
+:0c
+* !^X-SPAM-Warning: CSE spamcheck
+* !^FROM_MAILER
+! 1155215589@link.cuhk.edu.hk
