@@ -1,0 +1,7 @@
+[submodule "landscape"]
+	path = themes/landscape
+	url = git@github.com:hexojs/hexo-theme-landscape.git
+
+[submodule "paperwhite"]
+	path = themes/paperwhite
+	url = git@github.com:aeilot/hexo-theme-paperwhite.git
