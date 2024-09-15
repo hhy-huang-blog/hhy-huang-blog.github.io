@@ -14,6 +14,7 @@ Q-Former包括两个贡共享self-attention层的transformer子模块：图像tr
 可学习query embedding作为图像transformer输入，通过self-attention层相互作用，通过cross-attention层与frozen图像特征相互作用，query同时通过self-attention层与文本相互作用。根据预训练任务，作者使用不同self-attention mask控制query-text之间交互；作者使用BERTbase初始化Q-Former，cross-attention层进行随机初始化；
 ### 图像文本对比学习目标（ITC）
 ![](/images/blip2_2.jpg)
+<img src="/images/blip2_1.jpg" width="100" height="300"></img>
 ITC学习对齐图像表征与文本表征，通过比较成对与非成对的图像-文本相似度实现；计算过程如下：
 计算image transformer输出query表征Z ZZ（与可学习query长度相同）与text transformer输出文本表征t中【CLS】token相似性，选取最大值作为图像文本对相似度，为防止信息泄露，作者使用单模态self-attention mask，query与text不能互相可见，防止从文本直接学习；由于image encoder进行frozen，显存释放，可以使用batch负样本而不用像BLIP中使用队列。
 ### 基于图像文本生成（ITG）
