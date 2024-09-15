@@ -9,7 +9,7 @@ tags: vison-LLM
 - 图像编码器frozen，进行学习视觉语言表征
 - 使用frozen LLM进行学习视觉到文本生成
 ## 模型架构
-![[Pasted image 20240829001519.png]]
+<img src="../_imgs/blip2_1.jpg" />
 Q-Former包括两个贡共享self-attention层的transformer子模块：图像transformer（Q-Former左半部分）与frozen image encoder相互作用提取视觉特征；文本transformer（Q-Former右半部分）可作为文本编码器，也可作为文本解码器。
 可学习query embedding作为图像transformer输入，通过self-attention层相互作用，通过cross-attention层与frozen图像特征相互作用，query同时通过self-attention层与文本相互作用。根据预训练任务，作者使用不同self-attention mask控制query-text之间交互；作者使用BERTbase初始化Q-Former，cross-attention层进行随机初始化；
 ### 图像文本对比学习目标（ITC）
