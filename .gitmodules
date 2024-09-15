@@ -4,4 +4,3 @@
 
 [submodule "paperwhite"]
 	path = themes/paperwhite
-	url = git@github.com:aeilot/hexo-theme-paperwhite.git
