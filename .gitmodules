@@ -4,3 +4,4 @@
 
 [submodule "paperwhite"]
 	path = themes/paperwhite
+	url = git@github.com:hhy-huang/hexo-theme-paperwhite.git
