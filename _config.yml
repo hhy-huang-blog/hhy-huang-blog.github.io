@@ -1,0 +1,9 @@
+title: hhy-Notes
+per_page: 5
+pagination_dir: page
+
+theme: "paperwhite"
+theme_config:
+  bio: ""
+  foo:
+    bar: "a"
