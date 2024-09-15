@@ -24,13 +24,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: npm install
-      - name: hexo
-        run: hexo generate
       - name: Build
         run: npm run build
       - name: Upload Pages artifact
