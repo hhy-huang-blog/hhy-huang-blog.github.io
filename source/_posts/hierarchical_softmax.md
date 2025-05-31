@@ -100,4 +100,4 @@ v(\tilde{w}) &\leftarrow v(\tilde{w}) + \eta\sum^{l^w}_{j=2}\frac{\partial \math
 $$
 <b></b>
 
-By this way, we can learn the word embeddings by transforming the Softmax into a process of multi-binary classification problem with a computational overhead &O(log(V))&.
+By this way, we can learn the word embeddings by transforming the Softmax into a process of multi-binary classification problem with a computational overhead $O(log(V))$.
