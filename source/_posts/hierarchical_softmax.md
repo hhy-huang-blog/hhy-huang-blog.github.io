@@ -36,7 +36,7 @@ To learn the representation of each word. And optimize the loss:
 To compute this: ({% katex %}l^{w} - 2{% endkatex %} times binary classification)
 
 {% katex %}
-p(w|\text{context}(w)) = \prod_{j=2}^{l^{w}} p(d^{w}_j | \textbf{X}_w, \theta^{w}_{j-1})
+p(w|\text{context}(w)) = \prod_{j=2}^{l^{w}} p(d^{w}_{j} | \textbf{X}_{w}, \theta^{w}_{j-1})
 {% endkatex %}
 <b></b>
 
