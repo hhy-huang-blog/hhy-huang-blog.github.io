@@ -102,3 +102,9 @@ theme: paperwhite
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+math:
+  engine: 'katex'   # 或 'mathjax'
+  katex:
+    css: https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+    js: https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
